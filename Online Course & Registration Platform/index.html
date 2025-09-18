@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CourseConnect — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <a class="logo" href="index.html">CourseConnect</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" id="navDashboard">My Courses</a>
+      <a href="login.html" id="navAuth">Login / Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Learn new skills. Grow your career.</h1>
+      <p>Browse curated courses — enroll instantly. (Frontend demo — LocalStorage)</p>
+    </section>
+
+    <section class="controls">
+      <input id="search" placeholder="Search courses..." />
+      <select id="filterCategory">
+        <option value="">All categories</option>
+      </select>
+      <select id="filterLevel">
+        <option value="">All levels</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+    </section>
+
+    <section id="coursesGrid" class="grid"></section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> CourseConnect — Demo (Frontend Only)</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

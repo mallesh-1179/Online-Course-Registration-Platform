@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Courses — CourseConnect</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <a class="logo" href="index.html">CourseConnect</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">My Courses</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="dashboard-intro">
+      <h1>My Courses</h1>
+      <p id="welcomeUser"></p>
+    </section>
+
+    <section id="myCoursesGrid" class="grid"></section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year4"></span> CourseConnect — Demo</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>
